@@ -16,7 +16,6 @@ public class LlmService : ILlmService
     {
         _options = options.Value;
         _logger = logger;
-
         _logger.LogInformation("Loading ONNX model from {ModelPath}", _options.ModelPath);
         _model = new Model(_options.ModelPath);
         _tokenizer = new Tokenizer(_model);
@@ -46,8 +45,12 @@ public class LlmService : ILlmService
         }
     }
 
-    private string GenerateTokenByToken(Generator generator)
+    private string GenerateTokenByToken(Generator? generator)
     {
+        if (generator is null)
+        {
+            throw new ArgumentNullException(nameof(generator));
+        }
         var output = string.Empty;
 
         while (!generator.IsDone())

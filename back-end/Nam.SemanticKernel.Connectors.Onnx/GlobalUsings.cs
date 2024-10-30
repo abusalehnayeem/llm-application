@@ -1,0 +1,12 @@
+﻿global using System.Diagnostics.CodeAnalysis;
+global using System.Runtime.CompilerServices;
+global using Microsoft.Extensions.DependencyInjection;
+global using Microsoft.Extensions.Logging;
+global using Microsoft.Extensions.Logging.Abstractions;
+global using Microsoft.SemanticKernel;
+global using Microsoft.SemanticKernel.ChatCompletion;
+global using Microsoft.SemanticKernel.Embeddings;
+global using Microsoft.SemanticKernel.Services;
+global using Microsoft.SemanticKernel.TextGeneration;
+global using System.Text.Json;
+global using System.Text.Json.Serialization;

@@ -1,0 +1,124 @@
+/* Reset body styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* Main background set to white */
+    height: 100vh; /* Full viewport height */
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #7ab2d3; /* Sky Blue */
+}
+.navbar-brand {
+    color: #dff2eb; /* Light Green */
+}
+.navbar .nav-link {
+    color: #dff2eb; /* Light Green */
+}
+.navbar .nav-link:hover {
+    color: #b9e5e8; /* Soft Cyan */
+}
+
+/* Sidebar styling */
+.sidebar {
+    background-color: #dff2eb; /* Light Green */
+    position: fixed;
+    top: 56px; /* Below the navbar */
+    left: 0;
+    width: 250px; /* Fixed width */
+    height: calc(100vh - 56px); /* Full height minus navbar */
+    overflow-y: auto; /* Scrollable if content overflows */
+    padding-top: 1rem; /* Add some top padding */
+    transition: transform 0.3s ease; /* Smooth transition for toggle */
+    z-index: 1050;
+}
+
+/* New Chat Button */
+.new-chat-btn {
+    background-color: #7ab2d3; /* Sky Blue */
+    color: #ffffff; /* White text */
+    font-weight: bold;
+    text-align: left; /* Align text to left */
+    padding-left: 10px;
+}
+.new-chat-btn:hover {
+    background-color: #4a628a; /* Slate Blue */
+}
+
+/* Previous Chats Section */
+.previous-chats h5 {
+    color: #4a628a; /* Slate Blue */
+    font-weight: bold;
+}
+.chat-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #4a628a; /* Slate Blue for chat text */
+    cursor: pointer;
+}
+.chat-item:hover {
+    background-color: #b9e5e8; /* Soft Cyan on hover */
+    color: #ffffff; /* White text on hover */
+}
+.divider {
+    border-color: #b9e5e8; /* Light Cyan border */
+}
+
+/* Main Content Area */
+.main-content {
+    margin-left: 250px; /* Adjust margin for sidebar */
+    padding: 1rem; /* Padding for main content */
+}
+
+/* Tabs */
+.fixed-tabs {
+    margin-left: -250px; /* Align with sidebar */
+    position: fixed; /* Fixed position */
+    top: 56px; /* Below the navbar */
+    width: calc(100% - 250px); /* Full width minus sidebar */
+    background-color: #ffffff; /* White background */
+    border-bottom: 2px solid #b9e5e8; /* Soft Cyan Border */
+}
+.nav-tabs .nav-link {
+    color: #4a628a; /* Slate Blue */
+}
+.nav-tabs .nav-link.active {
+    background-color: #b9e5e8; /* Soft Cyan */
+    color: #4a628a; /* Slate Blue */
+}
+
+/* Chat Messages Area */
+.chat-messages {
+    max-height: calc(100vh - 120px); /* Adjust height for chat messages */
+    overflow-y: auto; /* Scrollable */
+    padding-bottom: 50px; /* Space for input section */
+}
+
+/* Chat Input Section */
+.chat-input-section {
+    background-color: #ffffff; /* White background */
+    border-top: 2px solid #7ab2d3; /* Sky Blue Border */
+    position: fixed;
+    bottom: 0;
+    left: 250px; /* Align with sidebar */
+    width: calc(100% - 250px); /* Remaining width */
+    padding: 10px; /* Padding */
+}
+textarea {
+    border: 2px solid #4a628a; /* Slate Blue Border */
+    resize: none;
+    background-color: #ffffff; /* White background */
+    color: #4a628a; /* Slate Blue */
+}
+.btn-outline-secondary {
+    color: #4a628a; /* Slate Blue for Attach Icon */
+    border-color: #4a628a;
+}
+.btn-outline-secondary:hover {
+    background-color: #b9e5e8; /* Soft Cyan */
+    border-color: #b9e5e8;
+    color: #ffffff; /* White text on hover */
+}
