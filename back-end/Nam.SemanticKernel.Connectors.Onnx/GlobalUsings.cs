@@ -10,3 +10,6 @@ global using Microsoft.SemanticKernel.Services;
 global using Microsoft.SemanticKernel.TextGeneration;
 global using System.Text.Json;
 global using System.Text.Json.Serialization;
+global using System.Text;
+global using Microsoft.ML.OnnxRuntimeGenAI;
+global using Nam.SemanticKernel.Connectors.Onnx.Settings;

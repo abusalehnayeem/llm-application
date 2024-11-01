@@ -1,9 +1,6 @@
-﻿using System.Text;
-using Microsoft.ML.OnnxRuntimeGenAI;
-using Nam.SemanticKernel.Connectors.Onnx.Settings;
+﻿namespace Nam.SemanticKernel.Connectors.Onnx.ChatCompletion;
 
-namespace Nam.SemanticKernel.Connectors.Onnx.ChatCompletion;
-
+#pragma warning disable SKEXP0001
 public sealed class OnnxChatCompletionService
     : OnnxServiceBase<OnnxChatCompletionService>,
         IChatCompletionService, IDisposable
@@ -220,3 +217,5 @@ public sealed class OnnxChatCompletionService
         _model?.Dispose();
     }
 }
+
+#pragma warning restore SKEXP0021

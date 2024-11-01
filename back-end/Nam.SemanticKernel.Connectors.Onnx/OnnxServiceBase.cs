@@ -1,5 +1,5 @@
 ﻿namespace Nam.SemanticKernel.Connectors.Onnx;
-
+#pragma warning disable SKEXP0001
 /// <summary>
 /// Base class for ONNX services, providing common attributes and logging functionality.
 /// </summary>
@@ -65,3 +65,5 @@ public abstract class OnnxServiceBase<T> where T : OnnxServiceBase<T>
         if (!string.IsNullOrWhiteSpace(value)) _aiServiceAttributes.Add(key, value);
     }
 }
+
+#pragma warning restore SKEXP0021

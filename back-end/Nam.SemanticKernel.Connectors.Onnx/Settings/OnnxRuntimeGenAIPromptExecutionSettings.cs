@@ -1,5 +1,5 @@
 ﻿namespace Nam.SemanticKernel.Connectors.Onnx.Settings;
-
+#pragma warning disable SKEXP0001
 public sealed class OnnxRuntimeGenAiPromptExecutionSettings : PromptExecutionSettings
 {
     /// <summary>
@@ -137,3 +137,5 @@ public sealed class OnnxRuntimeGenAiPromptExecutionSettings : PromptExecutionSet
                 .OnnxRuntimeGenAiPromptExecutionSettings)!;
     }
 }
+
+#pragma warning restore SKEXP0021
